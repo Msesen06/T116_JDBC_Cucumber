@@ -7,7 +7,7 @@
               firstname ve lastname bilgileri siralama testi
 
 
-      * Database baglantisi kurulur.
+      * Database baglantisi kurulur2.
       * students tablosu icin query hazirlanir
       * students tablosu icin sonuclar dogrulanir
-      * Database baglantisi kapatilir.
+      * Database baglantisi kapatilir2.

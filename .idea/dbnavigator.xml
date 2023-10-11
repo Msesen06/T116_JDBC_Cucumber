@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,7 +13,28 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="79f21b4b-2d55-450e-8230-48c43c1b5c30">
-      <console name="wonderworl_T116" type="STANDARD" schema="wonderworld_qa2" session="Main"><![CDATA[SELECT admission_no,firstname,lastname FROM wonderworld_qa2.students WHERE admission_no >18001 and admission_no <18010 ORDER BY admission_no]]></console>
+      <console name="wonderworl_T116" type="STANDARD" schema="wonderworld_qa2" session="Main"><![CDATA[select admission_no,firstname,lastname from wonderworld_qa2.students where admission_no >18001 and admission_no <18010 order by admission_no
+select mother_name ,mother_occupation from wonderworld_qa2.students
+where lastname like 'T%';
+update topic set name = 'Mustafa' where id = 13;
+select * from topic;
+
+select * from wonderworld_qa2.transport_route ;
+
+insert into wonderworld_qa2.transport_route (id,route_title,is_active)
+                     values (123,'Mustafa sesen', 'yes');
+select * from wonderworld_qa2.transport_route ;
+
+select * from wonderworld_qa2.transport_feemaster ;
+
+select * from wonderworld_qa2.transport_feemaster ;
+
+update wonderworld_qa2.transport_feemaster set fine_amount= 500.00 where month='October'
+select email from wonderworld_qa2.students where firstname= 'Edward' and lastname= 'Thomas' ;
+select * from wonderworld_qa2.transport_feemaster ;
+select * from wonderworld_qa2.visitors_book;
+DELETE FROM wonderworld_qa2.visitors_book WHERE id= 6;
+select * from wonderworld_qa2.visitors_book;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -23,6 +44,8 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="79f21b4b-2d55-450e-8230-48c43c1b5c30" dataset="wonderworld_qa2.transport_feemaster" active-filter-id="" />
+    <filter-actions connection-id="79f21b4b-2d55-450e-8230-48c43c1b5c30" dataset="wonderworld_qa2.transport_route" active-filter-id="" />
     <filter-actions connection-id="79f21b4b-2d55-450e-8230-48c43c1b5c30" dataset="wonderworld_qa2.students" active-filter-id="b7874a33-f200-44a6-b4e8-1159b00c517c">
       <filter id="b7874a33-f200-44a6-b4e8-1159b00c517c" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="OR" />
     </filter-actions>
@@ -434,7 +457,7 @@
     <execution-engine-settings>
       <statement-execution>
         <fetch-block-size value="100" />
-        <execution-timeout value="20" />
+        <execution-timeout value="30" />
         <debug-execution-timeout value="600" />
         <focus-result value="false" />
         <prompt-execution value="false" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.217">
-    <testcase classname="OdevQuery" name="students tablosundaki admission_no 18001 ile 18010 arasindaki ogrencilerin" time="1.916">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.966">
+    <testcase classname="Query04" name="topic tablosundan name bilgisi update testi" time="2.634">
         <system-out><![CDATA[* Database baglantisi kurulur...............................................passed
-* students tablosu icin query hazirlanir....................................passed
-* students tablosu icin sonuclar dogrulanir.................................passed
+* Update query'si hazirlanip calistirilir...................................passed
+* Update isleminin yapildigi dogrulanir.....................................passed
 * Database baglantisi kapatilir.............................................passed
 ]]></system-out>
     </testcase>

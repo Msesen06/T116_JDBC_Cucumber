@@ -1,76 +1,76 @@
 [
   {
-    "line": 4,
+    "line": 5,
     "elements": [
       {
-        "start_timestamp": "2023-09-12T19:52:29.872Z",
-        "line": 6,
-        "name": "students tablosundaki admission_no 18001 ile 18010 arasindaki ogrencilerin",
-        "description": "              firstname ve lastname bilgileri siralama testi",
-        "id": "odevquery;students-tablosundaki-admission-no-18001-ile-18010-arasindaki-ogrencilerin",
+        "start_timestamp": "2023-09-15T10:34:35.615Z",
+        "line": 7,
+        "name": "topic tablosundan name bilgisi update testi",
+        "description": "",
+        "id": "query04;topic-tablosundan-name-bilgisi-update-testi",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1436644000,
+              "duration": 1213710800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Database baglantisi kurulur.",
+            "match": {
+              "location": "stepDefinitions.DBstepDefinition.database_baglantisi_kurulur()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1288746700,
               "status": "passed"
             },
             "line": 10,
-            "name": "Database baglantisi kurulur.",
+            "name": "Update query\u0027si hazirlanip calistirilir",
             "match": {
-              "location": "stepDefinitions.OdevStepDefinition.database_baglantisi_kurulur()"
+              "location": "stepDefinitions.DBstepDefinition.update_query_si_hazirlanip_calistirilir()"
             },
             "keyword": "* "
           },
           {
             "result": {
-              "duration": 368439000,
               "status": "passed"
             },
             "line": 11,
-            "name": "students tablosu icin query hazirlanir",
+            "name": "Update isleminin yapildigi dogrulanir",
             "match": {
-              "location": "stepDefinitions.OdevStepDefinition.students_tablosu_icin_query_hazirlanir()"
+              "location": "stepDefinitions.DBstepDefinition.update_isleminin_yapildigi_dogrulanir()"
             },
             "keyword": "* "
           },
           {
             "result": {
+              "duration": 47926300,
               "status": "passed"
             },
             "line": 12,
-            "name": "students tablosu icin sonuclar dogrulanir",
-            "match": {
-              "location": "stepDefinitions.OdevStepDefinition.students_tablosu_icin_sonuclar_dogrulanir()"
-            },
-            "keyword": "* "
-          },
-          {
-            "result": {
-              "duration": 998000,
-              "status": "passed"
-            },
-            "line": 13,
             "name": "Database baglantisi kapatilir.",
             "match": {
-              "location": "stepDefinitions.OdevStepDefinition.database_baglantisi_kapatilir()"
+              "location": "stepDefinitions.DBstepDefinition.database_baglantisi_kapatilir()"
             },
             "keyword": "* "
           }
         ],
         "tags": [
           {
-            "name": "@odev"
+            "name": "@query04"
           }
         ]
       }
     ],
-    "name": "OdevQuery",
+    "name": "Query04",
     "description": "",
-    "id": "odevquery",
+    "id": "query04",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Odev_Query2.feature",
+    "uri": "file:src/test/resources/features/JDBC_Query04.feature",
     "tags": []
   }
 ]
